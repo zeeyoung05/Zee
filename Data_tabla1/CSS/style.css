@@ -1,0 +1,19 @@
+.container{
+background-color: rgba(0, 0, 0, 0.274);
+ box-sizing: border-box;
+position: absolute;
+left: 385px;
+top: 25px;
+width: 50%;
+height: 925px;
+opacity: 7;
+text-align: center;
+padding: 25;
+margin: 30;
+font-family : KG LET HER GO SOLID;
+font-size : 12px;
+color : #040006;
+color : rgb(4, 0, 6);
+    }
+
+

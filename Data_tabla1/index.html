@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th class="table-dark">Platillo</th>
+                <th class="table-dark">Nombre del platillo</th>
+                <th class="table-dark">País de Origen</th>   
+                <th class="table-dark">Receta</th>
+                <th class="table-dark">Opción de Compra</th>
+                <th class="table-dark">Opciones</th>
+            </tr> 
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td><figure class="figure">
+                    <img src="IMAGENES/pupusas.jpg" width="70px" class="figure-img img-fluid rounded" alt="imagen de pupusas">
+                    <figcaption class="figure-caption">Pupusas</figcaption>
+                  </figure></td>
+                <td>Pupusas</td>
+                <td>El Salvador</td>
+                <td>
+                    <i class="bi bi-chat-square-text-fill" style="font-size: 1rem" onclick="mensaje()"></i></span>
+                </td> 
+                <td><select class="form-select" aria-label="Default select example">
+                    <option selected>Opción de Compra</option>
+                    <option value="1">Servicio Adomicilio</option>
+                    <option value="2">Restaurante</option>
+                  </select></td>
+                <td>
+                    <span class="badge rounded-pill bg-warning text-dark"><i class="bi bi-pencil-square" style="font-size: 1rem"></i></span>
+                    <span class="badge rounded-pill bg-danger"><i class="bi bi-trash3-fill" style="font-size: 1rem"></i></span>
+                </td > 
+            <tr>
+                <td><figure class="figure">
+                    <img src="IMAGENES/Pan con pollo.jpg" width="70px" class="figure-img img-fluid rounded" alt="imagen de pan con pollo">
+                    <figcaption class="figure-caption">Pan con pollo</figcaption>
+                  </figure></td>
+                <td>Panes con pollo</td>
+                <td>El Salvador</td>
+                <td>
+                    <i class="bi bi-chat-square-text-fill" style="font-size: 1rem" onclick="ola()"></i></span>
+                </td>
+                <td><select class="form-select" aria-label="Default select example">
+                    <option selected>Opción de Compra</option>
+                    <option value="1">Servicio Adomicilio</option>
+                    <option value="2">Restaurante</option>
+                  </select></td>
+                <td>
+                    <span class="badge rounded-pill bg-warning text-dark"><i class="bi bi-pencil-square" style="font-size: 1rem"></i></span>
+                    <span class="badge rounded-pill bg-danger"><i class="bi bi-trash3-fill" style="font-size: 1rem"></i></span>
+                </td > 
+            <tr>
+                <td><figure class="figure">
+                    <img src="IMAGENES/nuegados.jpg" width="70px" class="figure-img img-fluid rounded" alt="imagen de nuegados">
+                    <figcaption class="figure-caption">Nuegados</figcaption>
+                  </figure></td>
+                <td>Nuegados</td>
+                <td>El Salvador</td>
+                <td>
+                    <i class="bi bi-chat-square-text-fill" style="font-size: 1rem" onclick="nuv()"></i></span>
+                </td > 
+                <td><select class="form-select" aria-label="Default select example">
+                    <option selected>Opción de Compra</option>
+                    <option value="1">Servicio Adomicilio</option>
+                    <option value="2">Restaurante</option>
+                  </select></td>
+                <td>
+                    <span class="badge rounded-pill bg-warning text-dark"><i class="bi bi-pencil-square" style="font-size: 1rem"></i></span>
+                    <span class="badge rounded-pill bg-danger"><i class="bi bi-trash3-fill" style="font-size: 1rem"></i></span>
+                </td > 
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>   
+function mensaje() {
+     
+Swal.fire({
+        title: 'Receta',
+        text: 'Tortilla gruesa a base de masa de maíz o de arroz rellena con uno o más ingredientes, como queso, chicharrón, ayote, frijoles refritos, loroco',
+        })
+    
+}
+</script>
+
+<script>
+    function ola() {
+
+        Swal.fire({
+        title: 'Dato',
+        text: 'Dato importante» pese a su nombre «Pan con Pollo» para realizar este platillo no necesariamente tienes que usar pollo, también puedes usar gallina o hasta pavo, también los ingredientes pueden variar y no todos son indispensables, si te falta alguno de la lista el sabor siempre será muy delicioso, ya que el ingrediente principal es la carne de pollo y la salsa del tomate.',
+})    
+    }
+</script>
+
+<script>
+    function nuv() {
+        Swal.fire({
+  title: 'Entrada',
+  text: 'Los Nuégados o buñuelos, es un platillo de sabor dulce que suele degustarse como entrada antes del almuerzo o incluso la cena. Se preparan a base de masa de yuca o de maíz, y generalmente pueden servirse acompañadas del típico chilate, una bebida de maíz tostado muy conocida en la gastronomía salvadoreña',
+})
+
+    }
+</script>
+</html>
