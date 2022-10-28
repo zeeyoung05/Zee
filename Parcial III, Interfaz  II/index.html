@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Formulario</title>
+<img src="Imagenes/form.png" height="100%" width="100%" alt="background">
+<div>
+  <div class="container-form">
+    <div class="row">
+      <div class="col-xs col-md-12 col-lg-12">
+    <h5 class="form-tittle">DocOficce</h5>
+      
+    <div class="mb-3">
+      <h6 class="form-tittle">Categoría</h6>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Individual</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Corporativo</label>
+        <div class="feedback-name"></div>
+      </div>
+    </div>
+    <form action="" onsubmit="return validar()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="name" placeholder="Nombre">
+      <div class="feedback-name-css">
+      <p id="feedback-name"></p>
+      </div>
+    </div>
+
+  <div class="mb-3">
+      <label for="surname" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="surname" placeholder="Apellido">
+    </div>
+  
+      <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+     
+           <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="contraseña">
+             <div class="feedback-name-css">
+               <p id="feedback-pass"></p>
+             </div>
+          </div>
+          
+           <div class="mb-3">
+                  <label for="password-confirn" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="password-confirn" placeholder="confirmar contraseña">
+                  <div class="feedback-name-css">
+                    <p id="feedback-pass"></p>
+                  </div>
+           </div>
+
+           <div class="form-check">                                                                    
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Acepto terminos y condiciones 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Recibir información y publicidad 
+              </label>
+            </div>
+
+      <button class="btn btn-outline-secondary" id="submit" type="submit" name="submit" ondblclick="mensaje">Enviar</button>
+      
+       </form>
+
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/valida-form.js"></script>
+</html>
+
+  
